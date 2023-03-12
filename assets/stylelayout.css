@@ -1,0 +1,91 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+header {
+    display: flex;
+    flex-basis: 10%;
+    background-color: rgb(141, 201, 248);
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+}
+
+.global_content {
+    display: flex;
+    flex-basis: 65%;
+    flex-direction: column;
+    background-color: rgba(255, 228, 196, 0.456);
+}
+
+.mainbox {
+    display: flex;
+    flex-basis: 40%;
+    justify-content: center;
+    padding: 10px;
+}
+
+.wrapperbox_1_2 {
+    display: flex;
+    flex-basis: 30%;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.box_1 {
+    display: flex;
+    flex-basis: 48%;
+    background-color: bisque;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_2 {
+    display: flex;
+    flex-basis: 48%;
+    background-color: bisque;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_3 {
+    display: flex;
+    flex-basis: 30%;
+    background-color: bisque;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+aside {
+    display: flex;
+    flex-grow: 1;
+    background-color: rgba(3, 198, 120, 0.314);
+    justify-content: center;
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    flex-basis: 20%;
+    background-color: rgb(141, 201, 248);
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.footer_box {
+    display: flex;
+    background-color: white;
+    padding: 40px;
+}

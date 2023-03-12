@@ -1,0 +1,93 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh
+}
+
+.headernav {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #DEE5ED;
+}
+
+.logoburger {
+    width: 158px;
+    height: 38px;
+}
+.headerburger {
+    display: flex;
+    flex-basis: 30%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 98px;
+    padding: 15px
+}
+
+.navigation {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 16px;
+    margin-right: 98px;
+    padding: 15px
+}
+
+a {
+    text-decoration: none; /*Убираем стандартное подчёркивание ссылки если оно ещё не убрано*/
+    display: inline-block; /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный*/ 
+    line-height: 2; /*Задаём высоту строки (можно в пикселях)*/
+    color: #486284; /*Задаём цвет ссылки*/
+    margin-right: 48px;
+    }
+
+a:after {
+    display: block; /*превращаем его в блочный элемент*/
+    content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+    height: 2px; /*задаём высоту линии*/
+    width: 0%; /*задаём начальную ширину элемента (линии)*/
+    background-color: #225384; /*цвет фона элемента*/
+    transition: width 0.3s ease-in-out; /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
+    }
+
+a:hover:after,
+a:focus:after {
+    width: 100%;
+    }
+a:hover {
+    color:#225384;
+    }
+
+.globalcontent {
+    display: flex;
+    flex-direction: row;
+    margin-top: 160px;
+    margin-left: 112px;
+}
+
+.bodyburger {
+    width: 573px;
+    height: 290px;
+}
+
+body, h1 {
+    font-family: 'DM Sans', Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #486284
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 60px;
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 21px;
+}
+
+p {
+    font-size: 20px;
+    color: #8CA2C0;
+    line-height: 32px;
+}
